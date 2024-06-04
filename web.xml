@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>DetailsServlet</servlet-name>
+        <servlet-class>za.ac.tut.bl.DetailsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ModulesServlet</servlet-name>
+        <servlet-class>za.ac.tut.bl.ModulesServlet</servlet-class>
+         
+        
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DetailsServlet</servlet-name>
+        <url-pattern>/DetailsServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ModulesServlet</servlet-name>
+        <url-pattern>/ModulesServlet.do</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <context-param>
+        <param-name>name</param-name>
+        <param-value>Bongani</param-value>
+    </context-param>
+    <context-param>
+        <param-name>surname</param-name>
+        <param-value>Maduna</param-value>
+    </context-param>
+    <context-param>
+        <param-name>course</param-name>
+        <param-value>Computer Science</param-value>
+    </context-param>
+    <context-param>
+        <param-name>module1</param-name>
+        <param-value>INT316D</param-value>
+    </context-param>
+    <context-param>
+        <param-name>module2</param-name>
+        <param-value>SWP316D</param-value>
+    </context-param>
+    <context-param>
+        <param-name>module3</param-name>
+        <param-value>MOD316D</param-value>
+    </context-param>
+    
+        
+       
+    
+</web-app>
